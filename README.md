@@ -1,5 +1,5 @@
 
-# Guía para Ejecutar el Proyecto
+# Guía Para Ejecutar El Proyecto
 
 Esta guía te proporcionará los pasos necesarios para configurar y ejecutar este proyecto en tu máquina.
 
@@ -12,7 +12,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente en tu sistema:
 
 ## Pasos a Seguir
 
-Sigue estos pasos para configurar y ejecutar el proyecto Vite:
+Sigue estos pasos para configurar y ejecutar el proyecto:
 
 ### 1. Clonar el Repositorio
 
@@ -49,5 +49,8 @@ copy .env.example .env
 Para crear las migraciones de la DB ejecuta el comando:
 ```bash
 php artisan migrate
+```
+Una vez terminado ejecuta:
+```bash
 php artisan db:seed --class=StateSeeder
 ```
