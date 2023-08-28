@@ -16,13 +16,21 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
 
 ### 1. Clonar el Repositorio
 
-Clona el repositorio de tu proyecto desde GitHub o cualquier otra plataforma de control de versiones.
+Clona el repositorio de tu proyecto desde GitHub
 
 ```bash
 git clone https://github.com/parrenson/to-do-list.git
 ```
 
-### 2. Instalar Dependencias
+### 2. Cambiar Rama
+
+Cambia la rama del repositorio de GitHub:
+
+```bash
+git checkout dev
+```
+
+### 3. Instalar Dependencias
 
 Navega al directorio del proyecto clonado e instala las dependencias de PHP del proyecto:
 
@@ -31,7 +39,7 @@ cd project
 composer install
 ```
 
-### 3. Configuración variables de entorno (.env)
+### 4. Configuración De Variables De Entorno (.env)
 
 Ejecuta el siguiente comando en la terminal:
 
@@ -44,7 +52,7 @@ cp .env.example .env
 copy .env.example .env
 ```
 
-### 3. Migraciones y Seeders
+### 5. Migraciones y Seeders
 
 Para crear las migraciones de la DB ejecuta el comando:
 ```bash
