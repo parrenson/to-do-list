@@ -24,10 +24,10 @@ class TaskController extends Controller
 
         $formattedTasks = $tasks->map(function ($task) {
             return [
-                'ID' => $task->id,
-                'Tarea' => $task->name,
-                'Estado' => $task->state->name,
-                'Fecha de Creación' => $task->created_at->format('d-m-Y'),
+                'id' => $task->id,
+                'name' => $task->name,
+                'stateName' => $task->state->name,
+                'formatDate' => $task->created_at->format('d-m-Y'),
             ];
         });
 
@@ -38,7 +38,7 @@ class TaskController extends Controller
     }
 
     /**
-     * Valida campos vacios y si aplica crea una nueva tarea, de lo contrario retorna un error.
+     * Valida campos vacios y si cumple con los validadores crea una nueva tarea, de lo contrario retorna un error.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse

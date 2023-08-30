@@ -8,7 +8,7 @@
     </h1>
     <div class="container mt-4 mb-4">
         <div class="d-flex align-items-center">
-            <input type="text" class="form-control flex-grow-1 me-2" id="task" placeholder="Crea una tarea">
+            <input type="text" class="form-control flex-grow-1 me-2" id="task" placeholder="CREAR UNA TAREA NUEVA">
             <button class="btn btn-primary" onclick="createTask()">
                 <i class="fas fa-plus"></i>
             </button>
