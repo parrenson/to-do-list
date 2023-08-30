@@ -14,8 +14,8 @@ class StateSeeder extends Seeder
      */
     public function run(): void
     {
-        State::create(['name' => 'Pendiente']);
-        State::create(['name' => 'Realizada']);
-        State::create(['name' => 'Cancelada']);
+        State::firstOrCreate(['name' => 'Pendiente']);
+        State::firstOrCreate(['name' => 'Realizada']);
+        State::firstOrCreate(['name' => 'Cancelada']);
     }
 }
